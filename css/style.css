@@ -4,4 +4,38 @@ body {
     url(/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px 50px 128px; 
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-container {
+    display: flex;
+    gap: 32px;
+}
+
+.link-container a {
+    text-shadow: 2px 2px 2px black;
+    padding: 6px;
+    transition: all .7s;
+}
+
+.link-container a:hover {
+    background-color: #E62721;
+}
+
+main {
+    background-color: tomato;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: violet;
+    height: 21px;
 }
