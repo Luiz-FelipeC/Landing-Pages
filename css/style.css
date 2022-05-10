@@ -31,11 +31,41 @@ header {
 }
 
 main {
-    background-color: tomato;
     flex-grow: 1;
+    display: flex;
 }
 
 footer {
     background-color: violet;
     height: 21px;
+}
+
+.content-container {
+    background-color: aqua;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container h1 {
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container h1 span {
+    font-size: 2rem;
+    font-weight: 200;
+    transform: translateY(15px);
+}
+
+.movie-title{
+    font-size: 2.6rem;
+    color: #E62721;
+}
+
+.social {
+    background-color: lightgreen;
+    width: 48px;
 }
