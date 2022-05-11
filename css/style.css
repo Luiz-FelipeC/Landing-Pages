@@ -41,15 +41,16 @@ footer {
 }
 
 .content-container {
-    background-color: aqua;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .content-container h1 {
     font-size: 7rem;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
 }
@@ -62,10 +63,59 @@ footer {
 
 .movie-title{
     font-size: 2.6rem;
+    font-style: italic;
     color: #E62721;
+    transform: translateY(-5px);
+}
+
+.movie-text {
+    width: 550px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.movie-button {
+    height: 80px;
+    width: 300px;
+    background-color: #E62721;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .social {
-    background-color: lightgreen;
     width: 48px;
+}
+
+.social ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.social li {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.social i {
+    font-size: 1.5rem;
+}
+
+.social li:hover{
+    background-color: #E62721;
+    border-color: #E62721;
 }
