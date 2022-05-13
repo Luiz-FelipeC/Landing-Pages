@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 80px 128px 50px 128px; 
+    animation: zoom 1.5s alternate;
 }
 
 header {
@@ -162,6 +163,20 @@ main {
 .menu-burger.active .menu::after {
     transform: rotate(-45deg);
 }
+
+@keyframes zoom {
+    0% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
 
 @media (max-width:768px) {
     body {
